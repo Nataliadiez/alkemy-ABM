@@ -102,8 +102,6 @@ const AllOperations = () => {
             <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow className={classes.tableRow}>
-                        <TableCell align="left">User name</TableCell>
-                        <TableCell align="left">Id operation</TableCell>
                         <TableCell align="left">Concept</TableCell>
                         <TableCell align="left">Type</TableCell>
                         <TableCell align="left">Amount</TableCell>
@@ -121,8 +119,6 @@ const AllOperations = () => {
                 
             return (
                     <TableRow key={operation.concept}>
-                        <TableCell component="th" scope="row">{operation.name}</TableCell>
-                        <TableCell component="th" scope="row">{operation.id_operation}</TableCell>
                         <TableCell component="th" scope="row">{operation.concept}</TableCell>
                         <TableCell align="left">{operation.type}</TableCell>
                         <TableCell align="left">{operation.amount}</TableCell>

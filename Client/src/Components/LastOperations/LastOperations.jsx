@@ -79,7 +79,6 @@ const LastOperations = () => {
             <Table className={classes.table} aria-label="simple table">
                 <TableHead >
                     <TableRow >
-                        <TableCell  align="center">User</TableCell>
                         <TableCell  align="center">Concept</TableCell>
                         <TableCell  align="center">Type</TableCell>
                         <TableCell  align="center">Amount</TableCell>
@@ -93,7 +92,6 @@ const LastOperations = () => {
                 const date = (operation.date.substring(0, 10))
             return (
                     <TableRow key={operation.concept}>
-                        <TableCell  align="center">{operation.name}</TableCell>
                         <TableCell  align="center">{operation.concept}</TableCell>
                         <TableCell  align="center">{operation.type}</TableCell>
                         <TableCell  align="center">{operation.amount}</TableCell>
